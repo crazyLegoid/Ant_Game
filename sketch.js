@@ -183,7 +183,7 @@ function movePlayer() {
         const dx = constrain(rotationY, -7, 7);
         player.x += dx;    
 
-    }else if(deviceOrientation === "portrait"){
+    }else if(deviceOrientation === "landscape"){
 
         const dx = constrain(rotationX, -7, 7);
         player.x += dx;    
