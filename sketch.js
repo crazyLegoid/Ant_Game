@@ -178,9 +178,23 @@ function follow() {
 
 function movePlayer() {
 
-    const dx = constrain(rotationY, -7, 7);
-    player.x += dx;
+    if(deviceOrientation === "portrait"){
+    
+        const dx = constrain(rotationY, -7, 7);
+        player.x += dx;    
 
+    }else if(deviceOrientation === "portrait"){
+
+        const dx = constrain(rotationX, -7, 7);
+        player.x += dx;    
+
+    }else{
+
+        const dx = constrain(rotationY, -7, 7);
+        player.x += dx;  
+
+    }
+    
 }
 
 function mouseClicked(){
