@@ -186,7 +186,7 @@ function movePlayer() {
     }else if(deviceOrientation === "landscape"){
 
         const dx = constrain(rotationX, -7, 7);
-        player.x += dx;    
+        player.y += dx;    
 
     }else{
 
